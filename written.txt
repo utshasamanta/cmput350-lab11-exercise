@@ -1,2 +1,7 @@
 2a.
+Both the batched and non-batched versions ran at approximately 8.5-9 FPS. I saw no visible
+performance improvement from batching when I ran it in WSL in my machine.
 2b.
+OpenGL can give each sprite a z coordinate and use the depth buffer and depth testing. The
+rasterization pipeline will then keep the closest fragment instead of requiring the sprites to be
+manually ordered from back to front.
